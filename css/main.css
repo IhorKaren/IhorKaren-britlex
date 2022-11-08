@@ -1,0 +1,180 @@
+:root {
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F5F5;
+    --primary-text-color: #8F95A5;
+    --secondary-text-color: #FFFFFF;
+    --primary-title-color: #000000;
+    --secondary-title-color: #263238;
+    --accent-color: #263238;
+}
+
+body {
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1378px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Utilities */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.section-title {
+    margin-bottom: 60px;
+
+    color: var(--primary-title-color);
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/* Header */
+
+.logo {
+    text-decoration: none;    
+
+    color: var(--primary-title-color);
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.logo-item {
+    color: #939393;
+}
+
+/* hero */
+
+.section.hero {
+    padding-top: 55px;
+}
+
+.hero-title {
+    margin-bottom: 40px;
+
+    color: var(--primary-title-color);
+
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+}
+
+.hero-text {
+    margin-bottom: 60px;
+}
+
+/* Sections */
+
+/* Skills */
+
+.skills-title {
+    margin-bottom: 20px;
+
+    color: var(--secondary-title-color);
+}
+
+.skills-text {
+    margin-bottom: 30px;
+}
+
+/* About */
+
+.about-text {
+    margin-bottom: 30px;
+}
+
+.about-title {
+    margin-bottom: 6px;
+
+    color: #2A3246;   
+    
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/* Price */
+
+.pricing-title {
+    margin-bottom: 20px;
+
+    color: var(--secondary-title-color);
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.pricing-list {
+    margin-bottom: 30px;
+}
+
+/* Contact */
+
+.contact-text {
+    margin-bottom: 30px;
+}
