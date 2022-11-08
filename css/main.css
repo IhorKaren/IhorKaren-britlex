@@ -53,7 +53,6 @@ button {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 
 .list {
@@ -95,7 +94,18 @@ img {
 
 /* Header */
 
+.page-header {
+    padding-top: 55px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 236px;
+
     text-decoration: none;    
 
     color: var(--primary-title-color);
@@ -107,10 +117,64 @@ img {
     color: #939393;
 }
 
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 121px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.site-nav .nav-link {
+    display: inline-block;
+    padding: 20px 0;
+
+    color: var(--secondary-title-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.header-btn {
+    display: inline-block;
+    min-width: 312px;
+    height: 70px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    
+    color: var(--primary-title-color);
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+}
+
 /* hero */
 
 .section.hero {
     padding-top: 55px;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-wrap {
+    margin-right: 144px;
+
+    width: 540px;
 }
 
 .hero-title {
@@ -127,21 +191,135 @@ img {
     margin-bottom: 60px;
 }
 
+.hero-btn {
+    min-width: 426px;
+    height: 100px;
+
+    font-size: 36px;
+    line-height: 1.5;
+
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
 /* Sections */
 
 /* Skills */
+
+.skills-container .section-title {
+    text-align: center;
+}
+
+.skills-list {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-end;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills-list .skills-item {
+    padding: 32px 18px 0 18px;
+
+    width: calc((100% - 60px) /3);
+    min-height: 579px; 
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+}
+
+.skills-list .skills-item:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    flex-direction: column;
+    min-height: 947px;
+}
+
+.skills-list .skills-item:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 882px;
+    min-height: 338px;
+}
 
 .skills-title {
     margin-bottom: 20px;
 
     color: var(--secondary-title-color);
+    
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.5;
 }
 
 .skills-text {
     margin-bottom: 30px;
 }
 
+.skills-btn {
+    min-width: 218px;
+    height: 60px;
+
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-btn:hover,
+.skills-btn:focus {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
 /* About */
+
+.section.about {
+    padding-bottom: 102px;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-wrap {
+    max-width: 652px;
+    margin-right: 142px;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+.about-list .about-list-item {
+    max-width: 108px;
+}
 
 .about-text {
     margin-bottom: 30px;
@@ -157,7 +335,21 @@ img {
     line-height: 1.5;
 }
 
+.about-list-text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 /* Price */
+
+.section.pricing {
+    padding-top: 102px;
+}
+
+.section.pricing .section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
 
 .pricing-title {
     margin-bottom: 20px;
@@ -169,8 +361,53 @@ img {
     line-height: 1.6;
 }
 
+.pricing-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .pricing-list {
+    display: flex;
     margin-bottom: 30px;
+    gap: 30px;  
+}
+
+.pricing-list .pricing-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.pricing-wrap {
+    display: flex;
+    gap: 196px; 
+    text-align: center;
+}
+
+.pricing-wrap-item {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+    width: 260px;
+    height: 45px;
+    
+    padding-top: 5px;
+    padding-bottom: 4px;
+    
+
+    background-color: #EEEEEE;
+    color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.pricing-wrap-price {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.pricing-wrap-text {
+    color: #546269;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 /* Contact */

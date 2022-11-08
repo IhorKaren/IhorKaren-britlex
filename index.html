@@ -19,48 +19,62 @@
     <title>Britlex</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="./" class="logo">Brit<span class="logo-item">lex</span></a>
-        <nav class="main-nav">
+    <header class="page-header">
+      <div class="container main-nav">
+        <nav class="site-nav">
+          <a href="./" class="logo">Brit<span class="logo-item">lex</span></a>
           <ul class="nav-list list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <button type="button">Let’s Talk</button>
+        <button type="button" class="header-btn">Let’s Talk</button>
       </div>
     </header>
 
     <main>
       <section class="section hero">
-        <div class="container">
-          <h1 class="hero-title">Learn Any Foreign Language</h1>
-          <p class="hero-text">
-            With our teachers who write a program for each student, you will be able to make your
-            first sketch after the first lesson.
-          </p>
-          <button type="button">Get started</button>
+        <div class="container hero-container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">
+              Learn <br />
+              Any Foreign Language
+            </h1>
+            <p class="hero-text">
+              With our teachers who write a program for each student, you will be able to make your
+              first sketch after the first lesson.
+            </p>
+            <button type="button" class="hero-btn">Get started</button>
+          </div>
           <img src="./image/hero.png" alt="Girl learning language" width="654" height="510" />
         </div>
       </section>
 
       <section class="section skills">
-        <div class="container">
+        <div class="container skills-container">
           <h2 class="section-title">Skills</h2>
           <ul class="skills-list list">
             <li class="skills-item">
               <img src="./image/speaking.png" alt="People are talking" width="390" height="390" />
               <h3 class="skills-title">Speaking</h3>
-              <p>
-                Improve your English skills and confidence. Live classes and interactive lessons
-                online. 20% extra free for a limited time only Learn English online and improve your
-                skills through our high-quality courses and resources – all designed for adult
-                language learners.
-              </p>
+              <ul class="list">
+                <li>
+                  <p class="skills-text">
+                    Improve your English skills and confidence. Live classes and interactive lessons
+                    online. 20% extra free for a limited time only
+                  </p>
+                </li>
+                <li>
+                  <p class="skills-text">
+                    Learn English online and improve your skills through our high-quality courses
+                    and resources – all designed for adult language learners.
+                  </p>
+                </li>
+              </ul>
+              <button type="button" class="skills-btn">Learn more</button>
             </li>
             <li class="skills-item">
               <img src="/image/writing.png" alt="Typewriter" width="390" height="264" />
@@ -69,7 +83,7 @@
                 One of the most important and extensive areas of natural science, the science that
                 studies substances, also their composition
               </p>
-              <button type="button">Learn more</button>
+              <button type="button" class="skills-btn">Learn more</button>
             </li>
             <li class="skills-item">
               <img src="./image/reading.png" alt="Man in the library" width="390" height="264" />
@@ -78,7 +92,7 @@
                 Perception and response actions of the user resulting from the use and/or upcoming
                 use of the product, system or service
               </p>
-              <button type="button">Learn more</button>
+              <button type="button" class="skills-btn">Learn more</button>
             </li>
             <li class="skills-item">
               <img
@@ -87,83 +101,97 @@
                 width="408"
                 height="274"
               />
-              <h3 class="skills-title">Listening</h3>
-              <p class="skills-text">
-                Here you can find activities to practise your listening skills. Listening will help
-                you to improve your understanding
-              </p>
-              <button type="button">Learn more</button>
+              <div class="skills-item-group">
+                <h3 class="skills-title">Listening</h3>
+                <p class="skills-text">
+                  Here you can find activities to practise your listening skills. Listening will
+                  help you to improve your understanding
+                </p>
+                <button type="button" class="skills-btn">Learn more</button>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="section about">
-        <div class="container">
-          <h2 class="section-title">About Us</h2>
-          <p class="about-text">
-            The model offers a framework for discussing problems related to the user's experience,
-            as well as possible ways and means of solving them. Application development begins at
-            the top level (strategy), where the future software product is described quite
-            abstractly from the point of view of the expectations of both users and the customer.
-          </p>
-          <ul class="about-list list">
-            <li>
-              <h3 class="about-title">800</h3>
-              <p class="about-list-text">Pupils</p>
-            </li>
-            <li>
-              <h3 class="about-title">16</h3>
-              <p class="about-list-text">Teachers</p>
-            </li>
-            <li>
-              <h3 class="about-title">6</h3>
-              <p class="about-list-text">Foreign languages</p>
-            </li>
-          </ul>
+        <div class="container about-container">
+          <div class="about-wrap">
+            <h2 class="section-title">About Us</h2>
+            <p class="about-text">
+              The model offers a framework for discussing problems related to the user's experience,
+              as well as possible ways and means of solving them. Application development begins at
+              the top level (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both users and the customer.
+            </p>
+            <ul class="about-list list">
+              <li class="about-list-item">
+                <h3 class="about-title">800</h3>
+                <p class="about-list-text">Pupils</p>
+              </li>
+              <li class="about-list-item">
+                <h3 class="about-title">16</h3>
+                <p class="about-list-text">Teachers</p>
+              </li>
+              <li class="about-list-item">
+                <h3 class="about-title">6</h3>
+                <p class="about-list-text">Foreign languages</p>
+              </li>
+            </ul>
+          </div>
           <img src="./image/about.png" alt="People climb the mountain" width="540" height="540" />
         </div>
       </section>
 
       <section class="section pricing">
-        <div class="container">
+        <div class="container pricing-container">
           <h2 class="section-title">Pricing</h2>
-          <ul class="pricing-list list">
-            <li class="pricing-item">
-              <img src="./image/online.png" alt="Girl using a laptop" width="426" height="320" />
-              <h3 class="pricing-title">Self-study online course</h3>
-              <p>
-                Start learning English online in live classes with qualified EC teachers and
-                students from all over the world.
-              </p>
-            </li>
-            <li class="pricing-item">
-              <img src="./image/lesson.png" alt="Class lesson" width="426" height="320" />
-              <h3 class="pricing-title">Live online classes</h3>
-              <p>Interactive group classes with expert teachers. Free 7-day trial</p>
-            </li>
-            <li class="pricing-item">
-              <img
-                src="./image/webinar.png"
-                alt="Girl sitting at the computer"
-                width="426"
-                height="320"
-              />
-              <h3 class="pricing-title">Personal Tuition</h3>
-              <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
-            </li>
-          </ul>
-          <ul class="price-list list">
-            <li class="price-item">
-              <p><span>£5.99</span>per month</p>
-            </li>
-            <li class="price-item">
-              <p><span>£12.99</span>per month</p>
-            </li>
-            <li class="price-item">
-              <p><span>£12.99</span>per month</p>
-            </li>
-          </ul>
+          <div class="pricing-content">
+            <ul class="pricing-list list">
+              <li class="pricing-item">
+                <img src="./image/online.png" alt="Girl using a laptop" width="426" height="320" />
+                <h3 class="pricing-title">Self-study online course</h3>
+                <p class="pricing-text">
+                  Start learning English online in live classes with qualified EC teachers and
+                  students from all over the world.
+                </p>
+              </li>
+              <li class="pricing-item">
+                <img src="./image/lesson.png" alt="Class lesson" width="426" height="320" />
+                <h3 class="pricing-title">Live online classes</h3>
+                <p class="pricing-text">
+                  Interactive group classes with expert teachers. Free 7-day trial
+                </p>
+              </li>
+              <li class="pricing-item">
+                <img
+                  src="./image/webinar.png"
+                  alt="Girl sitting at the computer"
+                  width="426"
+                  height="320"
+                />
+                <h3 class="pricing-title">Personal Tuition</h3>
+                <p class="pricing-text">
+                  Online one-to-one English tutoring – enjoy our first session for only $1
+                </p>
+              </li>
+            </ul>
+
+            <ul class="pricing-wrap list">
+              <li class="pricing-wrap-item">
+                <p class="pricing-wrap-price">£5.99</p>
+                <span class="pricing-wrap-text">per month</span>
+              </li>
+              <li class="pricing-wrap-item">
+                <p class="pricing-wrap-price">£12.99</p>
+                <span class="pricing-wrap-text">per month</span>
+              </li>
+              <li class="pricing-wrap-item">
+                <p class="pricing-wrap-price">£12.99</p>
+                <span class="pricing-wrap-text">per month</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
